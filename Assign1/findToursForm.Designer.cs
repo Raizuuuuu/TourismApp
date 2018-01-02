@@ -49,12 +49,13 @@
             this.homeButton.TabIndex = 0;
             this.homeButton.Text = "Home";
             this.homeButton.UseVisualStyleBackColor = true;
+            this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
             // 
             // searchButton
             // 
-            this.searchButton.Location = new System.Drawing.Point(568, 48);
+            this.searchButton.Location = new System.Drawing.Point(578, 48);
             this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(80, 26);
+            this.searchButton.Size = new System.Drawing.Size(80, 37);
             this.searchButton.TabIndex = 1;
             this.searchButton.Text = "Search";
             this.searchButton.UseVisualStyleBackColor = true;
@@ -75,6 +76,7 @@
             this.seeCartButton.TabIndex = 3;
             this.seeCartButton.Text = "See Cart";
             this.seeCartButton.UseVisualStyleBackColor = true;
+            this.seeCartButton.Click += new System.EventHandler(this.seeCartButton_Click);
             // 
             // dataGridView1
             // 

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.logoutButton = new System.Windows.Forms.Button();
-            this.backButton = new System.Windows.Forms.Button();
             this.findToursButton = new System.Windows.Forms.Button();
             this.manageToursButton = new System.Windows.Forms.Button();
             this.accountSettingsButton = new System.Windows.Forms.Button();
@@ -38,36 +37,28 @@
             // 
             // logoutButton
             // 
-            this.logoutButton.Location = new System.Drawing.Point(465, 406);
+            this.logoutButton.Location = new System.Drawing.Point(156, 337);
             this.logoutButton.Name = "logoutButton";
             this.logoutButton.Size = new System.Drawing.Size(114, 44);
             this.logoutButton.TabIndex = 0;
             this.logoutButton.Text = "Logout";
             this.logoutButton.UseVisualStyleBackColor = true;
-            // 
-            // backButton
-            // 
-            this.backButton.Location = new System.Drawing.Point(21, 35);
-            this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(67, 36);
-            this.backButton.TabIndex = 1;
-            this.backButton.Text = "back";
-            this.backButton.UseVisualStyleBackColor = true;
-            this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
             // 
             // findToursButton
             // 
-            this.findToursButton.Location = new System.Drawing.Point(158, 115);
+            this.findToursButton.Location = new System.Drawing.Point(73, 49);
             this.findToursButton.Name = "findToursButton";
             this.findToursButton.Size = new System.Drawing.Size(295, 44);
             this.findToursButton.TabIndex = 2;
             this.findToursButton.Text = "Find Tours";
             this.findToursButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.findToursButton.UseVisualStyleBackColor = true;
+            this.findToursButton.Click += new System.EventHandler(this.findToursButton_Click);
             // 
             // manageToursButton
             // 
-            this.manageToursButton.Location = new System.Drawing.Point(158, 181);
+            this.manageToursButton.Location = new System.Drawing.Point(73, 115);
             this.manageToursButton.Name = "manageToursButton";
             this.manageToursButton.Size = new System.Drawing.Size(295, 44);
             this.manageToursButton.TabIndex = 3;
@@ -77,7 +68,7 @@
             // 
             // accountSettingsButton
             // 
-            this.accountSettingsButton.Location = new System.Drawing.Point(158, 252);
+            this.accountSettingsButton.Location = new System.Drawing.Point(73, 186);
             this.accountSettingsButton.Name = "accountSettingsButton";
             this.accountSettingsButton.Size = new System.Drawing.Size(295, 44);
             this.accountSettingsButton.TabIndex = 4;
@@ -87,7 +78,7 @@
             // 
             // personalizeButton
             // 
-            this.personalizeButton.Location = new System.Drawing.Point(158, 323);
+            this.personalizeButton.Location = new System.Drawing.Point(73, 257);
             this.personalizeButton.Name = "personalizeButton";
             this.personalizeButton.Size = new System.Drawing.Size(295, 44);
             this.personalizeButton.TabIndex = 5;
@@ -99,12 +90,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(605, 462);
+            this.ClientSize = new System.Drawing.Size(449, 413);
             this.Controls.Add(this.personalizeButton);
             this.Controls.Add(this.accountSettingsButton);
             this.Controls.Add(this.manageToursButton);
             this.Controls.Add(this.findToursButton);
-            this.Controls.Add(this.backButton);
             this.Controls.Add(this.logoutButton);
             this.Name = "MenuForm";
             this.Text = "Home Page!";
@@ -115,7 +105,6 @@
         #endregion
 
         private System.Windows.Forms.Button logoutButton;
-        private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.Button findToursButton;
         private System.Windows.Forms.Button manageToursButton;
         private System.Windows.Forms.Button accountSettingsButton;

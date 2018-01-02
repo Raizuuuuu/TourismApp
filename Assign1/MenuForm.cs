@@ -22,5 +22,18 @@ namespace Assign1
             this.Close();
 
         }
+
+        private void logoutButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void findToursButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            findToursForm ftForm = new findToursForm();
+            ftForm.Show();
+            ftForm.Closed += (s, args) => this.Show();
+        }
     }
 }
