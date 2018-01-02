@@ -8,6 +8,7 @@ namespace Assign1
 {
     class User
     {
+        //look at my shit, my shit is amazing
         private string userID = "";
         private string userName = "";
         private string userPass = "";
