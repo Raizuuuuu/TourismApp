@@ -42,5 +42,17 @@ namespace Assign1
                 passwordBox.Text = string.Empty;
             }
         }
+
+        private void loginButton_Click(object sender, EventArgs e)
+        {
+            bool loginSuccess = true;
+            //check login
+            if (loginSuccess)
+            {
+                MenuForm menuForm  = new MenuForm();
+                menuForm.Show();
+                this.Hide();
+            }
+        }
     }
 }
