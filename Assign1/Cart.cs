@@ -36,6 +36,7 @@ namespace Assign1
             }
             return total;
         }
+        /* Once you finish
         public Transaction checkOut()
         {
             Transaction record = new Transaction(); //TODO: pass parameters
@@ -44,5 +45,6 @@ namespace Assign1
             IsReadOnly = true;
             return record;
         }
+        */
     }
 }
