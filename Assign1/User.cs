@@ -12,7 +12,7 @@ namespace Assign1
         private string userName = "";
         private string userPass = "";
         private string userPic = "";
-        private Cart userTourList = new Cart();
+        private Cart userTourList = new Cart(false);
         private string userFont = "";
         private string userFontSize = "";
         public User(string username, string password, string picture)
@@ -21,11 +21,12 @@ namespace Assign1
             userPass = password;
             userPic = picture;
         }
-
+        /*
         public String[] getDetails()
         {
+            string tourList = "";
             return new String[] { userID, userName, userPass, userPic, userTourList, userFont, userFontSize };
         }
-
+        */
     }
 }
