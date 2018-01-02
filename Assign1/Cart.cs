@@ -36,9 +36,9 @@ namespace Assign1
             }
             return total;
         }
-        public Transaction checkOut()
+        public Transaction checkOut(string userID)
         {
-            Transaction record = new Transaction(); //TODO: pass parameters
+            Transaction record = new Transaction(userID, this); //TODO: pass parameters
             //if constructor completes without errors/exceptions
             //proceed to mark as paid and make cart read only
             IsReadOnly = true;
