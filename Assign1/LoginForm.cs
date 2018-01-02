@@ -19,6 +19,11 @@ namespace Assign1
 
         private void usernameBox_MouseClick(object sender, MouseEventArgs e)
         {
+
+        }
+
+        private void usernameBox_Enter(object sender, EventArgs e)
+        {
             if (usernameBox.Text == "Username")
             {
                 usernameBox.Text = string.Empty;

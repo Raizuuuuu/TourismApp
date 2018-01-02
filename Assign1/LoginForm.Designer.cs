@@ -42,7 +42,7 @@
             this.usernameBox.Size = new System.Drawing.Size(244, 26);
             this.usernameBox.TabIndex = 1;
             this.usernameBox.Text = "Username";
-            this.usernameBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.usernameBox_MouseClick);
+            this.usernameBox.Enter += new System.EventHandler(this.usernameBox_Enter);
             // 
             // passwordBox
             // 
