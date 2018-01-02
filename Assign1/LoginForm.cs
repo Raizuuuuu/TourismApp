@@ -29,5 +29,10 @@ namespace Assign1
                 usernameBox.Text = string.Empty;
             }
         }
+
+        private void usernameBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
