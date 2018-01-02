@@ -10,6 +10,6 @@ namespace Assign1
     {
         //class for file read/write.
         //If functionality is already present in other classes, feel free to delete
-        public static 
+        //public static 
     }
 }
