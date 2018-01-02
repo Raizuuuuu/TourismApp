@@ -99,6 +99,7 @@
     </Compile>
     <Compile Include="Tour.cs" />
     <Compile Include="TourCollection.cs" />
+    <Compile Include="Transaction.cs" />
     <Compile Include="User.cs" />
     <EmbeddedResource Include="AccountSettingsForm.resx">
       <DependentUpon>AccountSettingsForm.cs</DependentUpon>
