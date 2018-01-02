@@ -53,6 +53,12 @@
       <DependentUpon>AccountSettingsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Cart.cs" />
+    <Compile Include="CartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CartForm.Designer.cs">
+      <DependentUpon>CartForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="FileIO.cs" />
     <Compile Include="findToursForm.cs">
       <SubType>Form</SubType>
@@ -104,6 +110,9 @@
     <Compile Include="User.cs" />
     <EmbeddedResource Include="AccountSettingsForm.resx">
       <DependentUpon>AccountSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CartForm.resx">
+      <DependentUpon>CartForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="findToursForm.resx">
       <DependentUpon>findToursForm.cs</DependentUpon>

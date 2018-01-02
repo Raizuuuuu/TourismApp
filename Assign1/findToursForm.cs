@@ -29,7 +29,8 @@ namespace Assign1
 
         private void seeCartButton_Click(object sender, EventArgs e)
         {
-            
+            cartForm ctForm = new cartForm();
+            ctForm.Show();
         }
     }
 }
