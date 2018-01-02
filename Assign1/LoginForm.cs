@@ -34,5 +34,13 @@ namespace Assign1
         {
 
         }
+
+        private void passwordBox_Enter(object sender, EventArgs e)
+        {
+            if (passwordBox.Text == "Password")
+            {
+                passwordBox.Text = string.Empty;
+            }
+        }
     }
 }

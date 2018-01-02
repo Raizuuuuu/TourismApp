@@ -53,6 +53,7 @@
             this.passwordBox.Size = new System.Drawing.Size(244, 26);
             this.passwordBox.TabIndex = 2;
             this.passwordBox.Text = "Password";
+            this.passwordBox.Enter += new System.EventHandler(this.passwordBox_Enter);
             // 
             // loginButton
             // 
