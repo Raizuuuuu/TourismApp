@@ -49,9 +49,18 @@ namespace Assign1
             //check login
             if (loginSuccess)
             {
+                this.Hide();
                 MenuForm menuForm  = new MenuForm();
                 menuForm.Show();
-                this.Hide();
+                menuForm.Closed += (s, args) => this.Show();
+                /*
+                 * (s, args) => this.Close(); is a lambda expression. 
+                 * It creates a function "in place" that is called when the form2 Closed event is fired. 
+                 * (s, args) are just names for the parameters to the lambda.
+                 * Which for an event handler are usually something like (object sender, EventArgs e). 
+                 * Because the Closed event delegate signature describes their types, the types are not given. 
+                 */
+
             }
         }
     }

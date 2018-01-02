@@ -53,6 +53,7 @@
             this.backButton.TabIndex = 1;
             this.backButton.Text = "back";
             this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
             // findToursButton
             // 
