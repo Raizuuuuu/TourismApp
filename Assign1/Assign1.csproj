@@ -53,6 +53,7 @@
       <DependentUpon>AccountSettingsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Cart.cs" />
+    <Compile Include="FileIO.cs" />
     <Compile Include="findToursForm.cs">
       <SubType>Form</SubType>
     </Compile>
