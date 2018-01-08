@@ -33,6 +33,10 @@ namespace Assign1
                             entryList.Add(entry.ToArray());
                             entry = new List<string>();
                         }
+                        else if (line.Trim(new char[2] { '\n',' ' }).Equals(string.Empty))
+                        {
+                            continue; //skip empty lines
+                        }
                         else
                         {
                             entry.Add(line);
@@ -47,16 +51,44 @@ namespace Assign1
         /*
          * EXAMPLE CODE
          * public static readTour(string path){
-         *      string[][] tourList = split(path);
+         *      string[][] tourList = split(path); //use the private method internally here
          *      TourCollection shitzu = new TourCollection();
          *      foreach(string[] t in tourList) {
          *          shitzu.Add(new Tour(
          *              t[0], //title
          *              t[1], //price
-         *              t[2] //whatever shit property
+         *              t[2] //whatever property
          *          ));
          *      }
          * }
          */
+
+        private static bool save(string[] data, string path)
+        {
+            //NOTICE: this method handles only one entry (containing a group of fields) at a time
+            string[] output = new string[data.Length + 2];
+            output[0] = "{"; //opening character
+            if (data.Length > 0)
+            {
+                for(int i = 0; i < data.Length; i++)
+                {
+                    if (data[i].Contains("\n"))
+                        return false;
+                    //reject fields containing newlines as they interfere with file formatting
+                    else
+                        output[i+1] = data[i];
+                }
+                output[data.Length + 1] = "}"; //closing character
+
+                using (var writer = new StreamWriter(path, true)) //append mode active
+                {
+                    foreach (string line in output)
+                        writer.WriteLine(line);
+                }
+                return true; //successful write
+            }
+            else
+                return false; //reject empty 
+        }
     }
 }
