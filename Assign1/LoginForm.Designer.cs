@@ -73,6 +73,7 @@
             this.registerButton.TabIndex = 2;
             this.registerButton.Text = "New User?";
             this.registerButton.UseVisualStyleBackColor = true;
+            this.registerButton.Click += new System.EventHandler(this.registerButton_Click);
             // 
             // LoginForm
             // 
@@ -85,6 +86,7 @@
             this.Controls.Add(this.usernameBox);
             this.Name = "LoginForm";
             this.Text = "LoginForm";
+            this.Load += new System.EventHandler(this.LoginForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

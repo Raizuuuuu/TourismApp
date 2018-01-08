@@ -11,7 +11,7 @@ namespace Assign1
     {
         //class for file read/write.
         //If functionality is already present in other classes, feel free to delete
-        private static string[][] split(string path)
+        public static string[][] split(string path)
         {
             string line;
             List<string> entry = new List<string>();
@@ -43,7 +43,14 @@ namespace Assign1
 
             return entryList.ToArray();
         }
-
+        public static void write(string path, string text)
+        {
+            using (System.IO.StreamWriter file =
+            new System.IO.StreamWriter(path,append: true))
+            {
+                file.WriteLine(text);
+            }
+        }
         /*
          * EXAMPLE CODE
          * public static readTour(string path){

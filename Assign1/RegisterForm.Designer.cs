@@ -33,8 +33,6 @@
             this.usernameBox = new System.Windows.Forms.TextBox();
             this.passwordBox = new System.Windows.Forms.TextBox();
             this.emailBox = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // backButton
@@ -54,45 +52,43 @@
             this.createAccountButton.TabIndex = 1;
             this.createAccountButton.Text = "Create Account";
             this.createAccountButton.UseVisualStyleBackColor = true;
+            this.createAccountButton.Click += new System.EventHandler(this.createAccountButton_Click);
             // 
             // usernameBox
             // 
-            this.usernameBox.Location = new System.Drawing.Point(125, 206);
+            this.usernameBox.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.usernameBox.Location = new System.Drawing.Point(125, 120);
             this.usernameBox.Name = "usernameBox";
             this.usernameBox.Size = new System.Drawing.Size(267, 26);
             this.usernameBox.TabIndex = 2;
             this.usernameBox.Text = "Username";
+            this.usernameBox.TextChanged += new System.EventHandler(this.usernameBox_TextChanged);
             // 
             // passwordBox
             // 
-            this.passwordBox.Location = new System.Drawing.Point(125, 265);
+            this.passwordBox.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.passwordBox.Location = new System.Drawing.Point(125, 205);
             this.passwordBox.Name = "passwordBox";
             this.passwordBox.Size = new System.Drawing.Size(267, 26);
             this.passwordBox.TabIndex = 3;
             this.passwordBox.Text = "Password";
+            this.passwordBox.TextChanged += new System.EventHandler(this.passwordBox_TextChanged);
+            this.passwordBox.Enter += new System.EventHandler(this.passwordBox_Enter);
             // 
             // emailBox
             // 
-            this.emailBox.Location = new System.Drawing.Point(125, 318);
+            this.emailBox.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.emailBox.Location = new System.Drawing.Point(125, 288);
             this.emailBox.Name = "emailBox";
             this.emailBox.Size = new System.Drawing.Size(267, 26);
             this.emailBox.TabIndex = 4;
             this.emailBox.Text = "Email";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(188, 78);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(136, 105);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
             // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(515, 445);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.emailBox);
             this.Controls.Add(this.passwordBox);
             this.Controls.Add(this.usernameBox);
@@ -100,7 +96,6 @@
             this.Controls.Add(this.backButton);
             this.Name = "RegisterForm";
             this.Text = "Register!";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,6 +108,5 @@
         private System.Windows.Forms.TextBox usernameBox;
         private System.Windows.Forms.TextBox passwordBox;
         private System.Windows.Forms.TextBox emailBox;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

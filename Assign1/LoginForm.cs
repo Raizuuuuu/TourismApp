@@ -63,5 +63,18 @@ namespace Assign1
 
             }
         }
+
+        private void registerButton_Click(object sender, EventArgs e)
+        {
+            RegisterForm rgtForm = new RegisterForm();
+            this.Hide();
+            rgtForm.Show();
+            rgtForm.Closed += (s, args) => this.Show();
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
